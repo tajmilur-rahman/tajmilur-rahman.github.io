@@ -8,32 +8,38 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
-        /* iframe for Banner and Navagation */
-        iframe {
-            display: block; 
-            width: 100vw;  
-            height: 128px;  
-            border: none;  
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column; 
+            overflow: hidden;
         }
 
-        /* Content Styling */
+        /* Banner styling */
+        iframe.banner {
+            height: 128px; 
+            width: 100vw;
+            border: none;
+        }
+
+        /* Content section */
         .content {
-            background-color: lightgrey; 
-            width: 100vw; 
-            height: calc(100vh - 128px); 
-            padding: 10px;
+            flex-grow: 1;
+            background-color: lightgray;
+            overflow: auto;
         }
     </style>
 </head>
 <body>
-    <!-- For the Banner -->
-    <iframe src="banner_navigation.html"></iframe>
+    <!-- For Banner and Navigation -->
+    <iframe src="banner_navigation.html" class="banner"></iframe>
 
-    <!-- Page Content -->
+    <!--  For the Content -->
     <div class="content">
-          <h1>Welcome to GenUS!</h1>
+            <h1>Welcome to GenUS!</h1>
     </div>
 </body>
 </html>
