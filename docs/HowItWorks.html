@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column; 
+            overflow: hidden;
+        }
+
+        /* Banner styling */
+        iframe.banner {
+            height: 128px; 
+            width: 100vw;
+            border: none;
+        }
+
+        /* Content section */
+        .content {
+            flex-grow: 1;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- For Banner and Navagation-->
+    <iframe src="banner_navigation.html" class="banner"></iframe>
+
+    <!--  For the Content -->
+    <div class="content">
+            <h1>This is How It Works page for now.</h1>
+    </div>
+</body>
+</html>
