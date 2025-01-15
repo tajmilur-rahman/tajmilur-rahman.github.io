@@ -28,7 +28,22 @@
         /* Content section */
         .content {
             flex-grow: 1;
+            display: flex;
+            flex-direction: column;
             overflow: auto;
+        }
+
+        /* Inner content section */
+        .inner-content {
+            flex-grow: 1;
+            padding: 10px; 
+        }
+
+        /* Footer styling */
+        iframe.footer {
+            height: 38px; 
+            width: 100vw; 
+            border: none;
         }
     </style>
 </head>
@@ -38,7 +53,12 @@
 
     <!--  For the Content -->
     <div class="content">
+        <div class="inner-content">
             <h1>This is How It Works page for now.</h1>
+        </div>
+
+        <!--  For the Footer -->
+        <iframe src="footer.html" class="footer"></iframe>
     </div>
 </body>
 </html>
